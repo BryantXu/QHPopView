@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4CD93DD6D7A602141EF66AB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C902814843BE0456B024520D /* libPods.a */; };
+		EC47630C1B7C688000087117 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC47630B1B7C688000087117 /* main.m */; };
+		EC47630F1B7C688000087117 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC47630E1B7C688000087117 /* AppDelegate.m */; };
+		EC4763121B7C688000087117 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4763111B7C688000087117 /* ViewController.m */; };
+		EC4763151B7C688000087117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4763131B7C688000087117 /* Main.storyboard */; };
+		EC4763171B7C688000087117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4763161B7C688000087117 /* Images.xcassets */; };
+		EC47631A1B7C688000087117 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC4763181B7C688000087117 /* LaunchScreen.xib */; };
+		EC4763261B7C688000087117 /* QHPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4763251B7C688000087117 /* QHPopViewTests.m */; };
+		EC47637C1B7C6D5600087117 /* CoreAnimationControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4763791B7C6D5600087117 /* CoreAnimationControl.m */; };
+		EC47637D1B7C6D5600087117 /* CoreAnimationPresent.m in Sources */ = {isa = PBXBuildFile; fileRef = EC47637B1B7C6D5600087117 /* CoreAnimationPresent.m */; };
+		EC4763821B7C6DFB00087117 /* UIView+QHUIViewCtg.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4763811B7C6DFB00087117 /* UIView+QHUIViewCtg.m */; };
+		EC4763851B7C70E700087117 /* CommAnimationEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4763841B7C70E700087117 /* CommAnimationEffect.m */; };
+		EC4763891B7C71AF00087117 /* OrderTimePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4763881B7C71AF00087117 /* OrderTimePopView.m */; };
+		EC47638E1B7C71BD00087117 /* CommDatePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC47638B1B7C71BD00087117 /* CommDatePickView.m */; };
+		EC47638F1B7C71BD00087117 /* CommPickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC47638D1B7C71BD00087117 /* CommPickView.m */; };
+		EC4763921B7C7AB700087117 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4763911B7C7AB700087117 /* PopViewController.m */; };
+		EC4763951B7C7C6100087117 /* MenuPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4763941B7C7C6100087117 /* MenuPopViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC4763201B7C688000087117 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC4762FE1B7C688000087117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC4763051B7C688000087117;
+			remoteInfo = QHPopView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A24BCF779FAC6B681974045E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AF0053120436920830B1F0A4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C902814843BE0456B024520D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4763061B7C688000087117 /* QHPopView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QHPopView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC47630A1B7C688000087117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC47630B1B7C688000087117 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC47630D1B7C688000087117 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC47630E1B7C688000087117 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC4763101B7C688000087117 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC4763111B7C688000087117 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EC4763141B7C688000087117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC4763161B7C688000087117 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC4763191B7C688000087117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EC47631F1B7C688000087117 /* QHPopViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QHPopViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC4763241B7C688000087117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4763251B7C688000087117 /* QHPopViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QHPopViewTests.m; sourceTree = "<group>"; };
+		EC4763781B7C6D5600087117 /* CoreAnimationControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationControl.h; sourceTree = "<group>"; };
+		EC4763791B7C6D5600087117 /* CoreAnimationControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationControl.m; sourceTree = "<group>"; };
+		EC47637A1B7C6D5600087117 /* CoreAnimationPresent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationPresent.h; sourceTree = "<group>"; };
+		EC47637B1B7C6D5600087117 /* CoreAnimationPresent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationPresent.m; sourceTree = "<group>"; };
+		EC47637F1B7C6DFB00087117 /* QHDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHDefine.h; sourceTree = "<group>"; };
+		EC4763801B7C6DFB00087117 /* UIView+QHUIViewCtg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QHUIViewCtg.h"; sourceTree = "<group>"; };
+		EC4763811B7C6DFB00087117 /* UIView+QHUIViewCtg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QHUIViewCtg.m"; sourceTree = "<group>"; };
+		EC4763831B7C70E700087117 /* CommAnimationEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommAnimationEffect.h; sourceTree = "<group>"; };
+		EC4763841B7C70E700087117 /* CommAnimationEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommAnimationEffect.m; sourceTree = "<group>"; };
+		EC4763871B7C71AF00087117 /* OrderTimePopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTimePopView.h; sourceTree = "<group>"; };
+		EC4763881B7C71AF00087117 /* OrderTimePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTimePopView.m; sourceTree = "<group>"; };
+		EC47638A1B7C71BD00087117 /* CommDatePickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommDatePickView.h; sourceTree = "<group>"; };
+		EC47638B1B7C71BD00087117 /* CommDatePickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommDatePickView.m; sourceTree = "<group>"; };
+		EC47638C1B7C71BD00087117 /* CommPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommPickView.h; sourceTree = "<group>"; };
+		EC47638D1B7C71BD00087117 /* CommPickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommPickView.m; sourceTree = "<group>"; };
+		EC4763901B7C7AB700087117 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		EC4763911B7C7AB700087117 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		EC4763931B7C7C6100087117 /* MenuPopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuPopViewController.h; sourceTree = "<group>"; };
+		EC4763941B7C7C6100087117 /* MenuPopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuPopViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC4763031B7C688000087117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4CD93DD6D7A602141EF66AB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC47631C1B7C688000087117 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49A43739C619266987AA24DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A24BCF779FAC6B681974045E /* Pods.debug.xcconfig */,
+				AF0053120436920830B1F0A4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D5C3CD873A84E5906690DD39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C902814843BE0456B024520D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC4762FD1B7C688000087117 = {
+			isa = PBXGroup;
+			children = (
+				EC4763081B7C688000087117 /* QHPopView */,
+				EC4763221B7C688000087117 /* QHPopViewTests */,
+				EC4763071B7C688000087117 /* Products */,
+				49A43739C619266987AA24DC /* Pods */,
+				D5C3CD873A84E5906690DD39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC4763071B7C688000087117 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC4763061B7C688000087117 /* QHPopView.app */,
+				EC47631F1B7C688000087117 /* QHPopViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC4763081B7C688000087117 /* QHPopView */ = {
+			isa = PBXGroup;
+			children = (
+				EC47632F1B7C68AF00087117 /* QHPopView */,
+				EC47630D1B7C688000087117 /* AppDelegate.h */,
+				EC47630E1B7C688000087117 /* AppDelegate.m */,
+				EC4763101B7C688000087117 /* ViewController.h */,
+				EC4763111B7C688000087117 /* ViewController.m */,
+				EC4763931B7C7C6100087117 /* MenuPopViewController.h */,
+				EC4763941B7C7C6100087117 /* MenuPopViewController.m */,
+				EC4763131B7C688000087117 /* Main.storyboard */,
+				EC4763161B7C688000087117 /* Images.xcassets */,
+				EC4763181B7C688000087117 /* LaunchScreen.xib */,
+				EC4763091B7C688000087117 /* Supporting Files */,
+			);
+			path = QHPopView;
+			sourceTree = "<group>";
+		};
+		EC4763091B7C688000087117 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC47630A1B7C688000087117 /* Info.plist */,
+				EC47630B1B7C688000087117 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC4763221B7C688000087117 /* QHPopViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC4763251B7C688000087117 /* QHPopViewTests.m */,
+				EC4763231B7C688000087117 /* Supporting Files */,
+			);
+			path = QHPopViewTests;
+			sourceTree = "<group>";
+		};
+		EC4763231B7C688000087117 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC4763241B7C688000087117 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC47632F1B7C68AF00087117 /* QHPopView */ = {
+			isa = PBXGroup;
+			children = (
+				EC4763301B7C68D600087117 /* animation */,
+				EC4763861B7C718600087117 /* PopView */,
+			);
+			path = QHPopView;
+			sourceTree = "<group>";
+		};
+		EC4763301B7C68D600087117 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				EC47637A1B7C6D5600087117 /* CoreAnimationPresent.h */,
+				EC47637B1B7C6D5600087117 /* CoreAnimationPresent.m */,
+				EC4763831B7C70E700087117 /* CommAnimationEffect.h */,
+				EC4763841B7C70E700087117 /* CommAnimationEffect.m */,
+				EC4763781B7C6D5600087117 /* CoreAnimationControl.h */,
+				EC4763791B7C6D5600087117 /* CoreAnimationControl.m */,
+				EC47637E1B7C6D7400087117 /* QHSupports */,
+			);
+			path = animation;
+			sourceTree = "<group>";
+		};
+		EC47637E1B7C6D7400087117 /* QHSupports */ = {
+			isa = PBXGroup;
+			children = (
+				EC47637F1B7C6DFB00087117 /* QHDefine.h */,
+				EC4763801B7C6DFB00087117 /* UIView+QHUIViewCtg.h */,
+				EC4763811B7C6DFB00087117 /* UIView+QHUIViewCtg.m */,
+			);
+			path = QHSupports;
+			sourceTree = "<group>";
+		};
+		EC4763861B7C718600087117 /* PopView */ = {
+			isa = PBXGroup;
+			children = (
+				EC4763871B7C71AF00087117 /* OrderTimePopView.h */,
+				EC4763881B7C71AF00087117 /* OrderTimePopView.m */,
+				EC47638A1B7C71BD00087117 /* CommDatePickView.h */,
+				EC47638B1B7C71BD00087117 /* CommDatePickView.m */,
+				EC47638C1B7C71BD00087117 /* CommPickView.h */,
+				EC47638D1B7C71BD00087117 /* CommPickView.m */,
+				EC4763901B7C7AB700087117 /* PopViewController.h */,
+				EC4763911B7C7AB700087117 /* PopViewController.m */,
+			);
+			path = PopView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC4763051B7C688000087117 /* QHPopView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC4763291B7C688000087117 /* Build configuration list for PBXNativeTarget "QHPopView" */;
+			buildPhases = (
+				69264F60E9DBFF90D75B06B7 /* Check Pods Manifest.lock */,
+				EC4763021B7C688000087117 /* Sources */,
+				EC4763031B7C688000087117 /* Frameworks */,
+				EC4763041B7C688000087117 /* Resources */,
+				96005058683DC57C6DE56D1A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QHPopView;
+			productName = QHPopView;
+			productReference = EC4763061B7C688000087117 /* QHPopView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC47631E1B7C688000087117 /* QHPopViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC47632C1B7C688000087117 /* Build configuration list for PBXNativeTarget "QHPopViewTests" */;
+			buildPhases = (
+				EC47631B1B7C688000087117 /* Sources */,
+				EC47631C1B7C688000087117 /* Frameworks */,
+				EC47631D1B7C688000087117 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC4763211B7C688000087117 /* PBXTargetDependency */,
+			);
+			name = QHPopViewTests;
+			productName = QHPopViewTests;
+			productReference = EC47631F1B7C688000087117 /* QHPopViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC4762FE1B7C688000087117 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = imqiuhang;
+				TargetAttributes = {
+					EC4763051B7C688000087117 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					EC47631E1B7C688000087117 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = EC4763051B7C688000087117;
+					};
+				};
+			};
+			buildConfigurationList = EC4763011B7C688000087117 /* Build configuration list for PBXProject "QHPopView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC4762FD1B7C688000087117;
+			productRefGroup = EC4763071B7C688000087117 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC4763051B7C688000087117 /* QHPopView */,
+				EC47631E1B7C688000087117 /* QHPopViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC4763041B7C688000087117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4763151B7C688000087117 /* Main.storyboard in Resources */,
+				EC47631A1B7C688000087117 /* LaunchScreen.xib in Resources */,
+				EC4763171B7C688000087117 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC47631D1B7C688000087117 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69264F60E9DBFF90D75B06B7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96005058683DC57C6DE56D1A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC4763021B7C688000087117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4763121B7C688000087117 /* ViewController.m in Sources */,
+				EC47638E1B7C71BD00087117 /* CommDatePickView.m in Sources */,
+				EC4763821B7C6DFB00087117 /* UIView+QHUIViewCtg.m in Sources */,
+				EC47638F1B7C71BD00087117 /* CommPickView.m in Sources */,
+				EC4763891B7C71AF00087117 /* OrderTimePopView.m in Sources */,
+				EC4763951B7C7C6100087117 /* MenuPopViewController.m in Sources */,
+				EC4763851B7C70E700087117 /* CommAnimationEffect.m in Sources */,
+				EC4763921B7C7AB700087117 /* PopViewController.m in Sources */,
+				EC47630F1B7C688000087117 /* AppDelegate.m in Sources */,
+				EC47630C1B7C688000087117 /* main.m in Sources */,
+				EC47637C1B7C6D5600087117 /* CoreAnimationControl.m in Sources */,
+				EC47637D1B7C6D5600087117 /* CoreAnimationPresent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC47631B1B7C688000087117 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4763261B7C688000087117 /* QHPopViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC4763211B7C688000087117 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC4763051B7C688000087117 /* QHPopView */;
+			targetProxy = EC4763201B7C688000087117 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC4763131B7C688000087117 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4763141B7C688000087117 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC4763181B7C688000087117 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4763191B7C688000087117 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC4763271B7C688000087117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC4763281B7C688000087117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC47632A1B7C688000087117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A24BCF779FAC6B681974045E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QHPopView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC47632B1B7C688000087117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0053120436920830B1F0A4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QHPopView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC47632D1B7C688000087117 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QHPopViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QHPopView.app/QHPopView";
+			};
+			name = Debug;
+		};
+		EC47632E1B7C688000087117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QHPopViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QHPopView.app/QHPopView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC4763011B7C688000087117 /* Build configuration list for PBXProject "QHPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC4763271B7C688000087117 /* Debug */,
+				EC4763281B7C688000087117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC4763291B7C688000087117 /* Build configuration list for PBXNativeTarget "QHPopView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC47632A1B7C688000087117 /* Debug */,
+				EC47632B1B7C688000087117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC47632C1B7C688000087117 /* Build configuration list for PBXNativeTarget "QHPopViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC47632D1B7C688000087117 /* Debug */,
+				EC47632E1B7C688000087117 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC4762FE1B7C688000087117 /* Project object */;
+}
