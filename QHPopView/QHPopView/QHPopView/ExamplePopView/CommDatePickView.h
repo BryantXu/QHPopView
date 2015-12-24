@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 lovewith.me. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "RootPopView.h"
 
 @protocol CommDatePickViewDelegate <NSObject>
 
@@ -14,7 +14,7 @@
 
 @end
 
-@interface CommDatePickView : UIView
+@interface CommDatePickView : RootPopView
 
 @property (nonatomic,weak)id<CommDatePickViewDelegate>delagate;
 
@@ -22,9 +22,6 @@
 
 - (void)setAsDateAndTime;
 
-//比如有2个按钮可以出发显示 回调的时候可以区分是选择了哪个tag选择的日期
-- (void)showWithTag:(int )tag;
-- (void)hide:(BOOL)animation;
 
 
 @end

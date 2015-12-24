@@ -7,7 +7,7 @@
 //
 
 #import "PopViewController.h"
-
+#import "QHHead.h"
 @interface PopViewController ()
 {
     NSArray*btnArr;
@@ -26,7 +26,7 @@
 }
 - (void)initBtn {
     int tag=0;
-    float screenWidth=[UIScreen mainScreen].bounds.size.width;
+
     for (NSString*title in btnArr) {
         UIButton*curBtn=[[UIButton alloc] initWithFrame:CGRectMake(10, 10+tag*40, screenWidth-20, 30)];
         curBtn.tag=tag++;

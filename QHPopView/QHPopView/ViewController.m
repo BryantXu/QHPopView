@@ -7,14 +7,34 @@
 //
 
 #import "ViewController.h"
-#import "OrderTimePopView.h"
+#import "GuidpageDownView.h"
+#import "YMSOpenNotifyDownView.h"
 #import "CommDatePickView.h"
 #import "CommPickView.h"
-#import "PopViewController.h"
-#import "CoreAnimationPresent.h"
+#import "QHHead.h"
+#import "AreaPickView.h"
+
 #import "MenuPopViewController.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+/*!
+ *  @author imqiuhang, 15-12-24
+ *
+ *  @brief 使用的时候只需要把QHPopView里面的RootPopView这个文件夹拖到自己项目就好了 使用的时候UIView继承一下父类就好了 详情请看 ExamplePopView里面的各种列子 当然 例子也是直接可以用的
+ 
+ 
+ 另外，还有一种通过Present弹出Viewcontroller的方法是通过自己实现弹出协议来实现的，具体请看另一种是使用present那个文件夹里面的例子
+ */
+
+@interface ViewController ()
+<
+UITableViewDelegate,
+UITableViewDataSource,
+CardDownAnimationViewDelegate,
+CommDatePickViewDelegate,
+CommPickViewDelegate,
+AreaPickViewDelegate
+>
 
 @end
 
@@ -22,17 +42,98 @@
 
 {
     NSArray *data;
-    OrderTimePopView *orderTimePopView;
-    CommDatePickView *datePickView;
-    CommPickView *pickView;
     
+    GuidpageDownView *guidpageDownView;
+    YMSOpenNotifyDownView *openNotifyDownView;
+    CommDatePickView *commDatePickView;
+    CommPickView *commPickView;
+    AreaPickView *areaPickView;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"QHNavSliderMenuView";
+    self.title = @"PopView";
     [self initModel];
     [self initView];
 }
+
+
+#pragma mark events
+
+- (void)showDefaultCard {
+    if (!openNotifyDownView) {
+        openNotifyDownView = [[YMSOpenNotifyDownView alloc] init];
+        openNotifyDownView.delegate = self;
+    }
+    
+    [openNotifyDownView show];
+}
+
+- (void)showScrollCard {
+    if (!guidpageDownView) {
+        guidpageDownView = [[GuidpageDownView alloc] init];
+        guidpageDownView.delegate = self;
+    }
+    
+    [guidpageDownView show];
+}
+
+- (void)showPickView {
+    if (!commPickView) {
+        commPickView = [[CommPickView alloc] init];
+        commPickView.delagate = self;
+    }
+    
+    commPickView.dataForPickView = @[@"aaaa",@"bbbb",@"cccc",@"dddd"];
+    [commPickView showWithTag:1];
+}
+
+- (void)showDate {
+    if (!commDatePickView) {
+        commDatePickView = [[CommDatePickView alloc] init];
+        commDatePickView.delagate = self;
+        //可以通过里面的日期选择器自定义日期选择的规则
+        commDatePickView.dataPickView.minimumDate = [NSDate dateWithTimeIntervalSince1970:0];
+    }
+    [commDatePickView showWithTag:1];
+}
+
+- (void)showAddress {
+    if (!areaPickView) {
+        areaPickView = [[AreaPickView alloc] init];
+        areaPickView.delagate = self;
+    }
+    [areaPickView showWithTag:1];
+}
+
+- (void)showPresent {
+    [self.navigationController pushViewController:[MenuPopViewController new] animated:YES];
+}
+
+#pragma mark - 弹出视图消失或者选择了相应delegate
+//卡片视图消失时候的代理
+-  (void)cardDownAnimationViewDidHide:(CardDownAnimationView *)cardDownView {
+    if (cardDownView==guidpageDownView) {
+        [guidpageDownView removeFromSuperview];
+        guidpageDownView = nil;
+    }else if (cardDownView==openNotifyDownView) {
+        [openNotifyDownView removeFromSuperview];
+        openNotifyDownView = nil;
+    }
+}
+
+- (void)didPickDataWithDate:(NSDate *)date andTag:(int)tag {
+    MSLog(@"date is:%@",date);
+}
+
+- (void)didPickObjectWithIndex:(int)index andTag:(int)tag {
+    MSLog(@"点击的位置是 :%i",index);
+}
+
+- (void)areaPickViewdidPickProvince:(NSString *)province andCity:(NSString *)city andArea:(NSString *)area {
+    //选择了相应的省市区
+}
+
+
 
 #pragma mark - tableViewDelegate
 
@@ -54,43 +155,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    #pragma clang diagnostic push
-    #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     SEL sel = NSSelectorFromString(data[indexPath.row][@"SEL"]);
     [self performSelector:sel];
-    #pragma clang diagnostic pop
+#pragma clang diagnostic pop
+    
+    
 }
-#pragma mark events
-
-- (void)showAsTBPush {
-    if (!orderTimePopView) {
-        orderTimePopView = [[OrderTimePopView alloc] init];
-    }
-    [orderTimePopView showWithAnimationdView:self.view];
-
-}
-
-- (void)showDate {
-    if (!datePickView) {
-        datePickView = [[CommDatePickView alloc] init];
-        //如果需要选择日期 设置datePickView.delagate =self; pickView也一样
-    }
-    [datePickView showWithTag:0];
-}
-
-- (void)showPickView {
-    if (!pickView) {
-        pickView = [[CommPickView alloc] initWithDataArr:@[@"男",@"女"]];
-    }
-    [pickView showWithTag:0];
-}
-
-- (void)push {
-    [self.navigationController pushViewController:[MenuPopViewController new] animated:YES];
-}
-
-
-
 
 #pragma mark -init
 
@@ -106,21 +178,32 @@
 
 - (void)initModel {
   data = @[
-        @{
-          @"title" : @"仿淘宝压入式变形弹出",
-          @"SEL" : @"showAsTBPush"
-        },
-        @{
-          @"title" : @"弹出日期",
-          @"SEL" : @"showDate"
-        },
-        @{
-          @"title" : @"弹出选择器",
-          @"SEL" : @"showPickView"
-        },
-        @{
-          @"title" : @"各个方向的菜单",
-          @"SEL" : @"push"
+    @{
+      @"title" : @"滑动式卡片",
+      @"SEL" : @"showScrollCard"
+    },
+    @{
+      @"title" : @"卡片式掉落",
+      @"SEL" : @"showDefaultCard"
+    },
+
+    @{
+      @"title" : @"弹出选择器",
+      @"SEL" : @"showPickView"
+    },
+    @{
+      @"title" : @"弹出日期",
+      @"SEL" : @"showDate"
+    },
+
+    @{
+      @"title" : @"弹出地址选择器",
+      @"SEL" : @"showAddress"
+    },
+    
+    @{
+        @"title" : @"另一种弹出ViewController的类型",
+        @"SEL" : @"showPresent"
         },
   ];
 }
