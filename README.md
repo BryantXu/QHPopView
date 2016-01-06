@@ -7,3 +7,4 @@
 <p>demo中用到第三方动画POP，你需要在自己的pod中添加POP，请 用QHPopView.xcworkspace打开工程
 
 <p>具体效果请看:http://v.youku.com/v_show/id_XMTQyMjQ0MzI0NA==.html
+
